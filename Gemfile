@@ -12,24 +12,20 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
-
+  gem 'web-console', '~> 2.0'
+  gem 'spring'
   gem 'byebug'
   gem 'rspec-rails'
   gem 'spring-commands-rspec'
   gem 'guard-rspec', require: false
-
+  gem 'database_cleaner'
+  gem 'factory_girl_rails', '~> 4.0'
 end
 
 group :test do 
-
   gem 'capybara'
-
+  gem 'shoulda-matchers', require: false
 end
 
-group :development do
 
-  gem 'web-console', '~> 2.0'
-  gem 'spring'
-
-end
 
